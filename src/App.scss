@@ -140,12 +140,9 @@
   /* Smartphones */
   @media (min-width: 320px) and (max-width: 480px) {
     .header {
-      padding: 2vw;
+      padding: 5vw;
       margin: 2vw 0;
-    }
-  
-    .carousel {
-      height: 60%;
+      font-size: 5vw;
     }
   
     .left-arrow, .right-arrow {
