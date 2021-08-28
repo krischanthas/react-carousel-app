@@ -1,3 +1,5 @@
+// This data will be loaded and used in the Carousel component
+
 const assets = [
     {
         "id": 1,

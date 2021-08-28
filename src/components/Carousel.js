@@ -55,6 +55,7 @@ const Carousel = () => {
                     ))}
                 </div>
                 <div className="links">
+                    {/* populates slide navigation jumps */}
                     {assets.map((assets, index) => (
                         <span onClick={() => jumpToSlide(index) } style={current === index ? {color: 'grey'} : {color:'#000'}}>&bull;</span>
                     ))}

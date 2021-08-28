@@ -7,7 +7,10 @@ const Modal = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
-      <button type="button" onClick={handleClose} className="close-btn">&#10006;</button>
+        {/* close modal button */}
+        <button type="button" onClick={handleClose} className="close-btn">&#10006;</button>
+
+        {/* Images will be passed to this component as children props */}
         {children}
       </section>
     </div>
