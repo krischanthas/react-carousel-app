@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .App {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 2px 2px;
+  }
+  
+  .header {
+    padding: 3vw;
+    margin: 0;
+    padding: 0 20vw;
+    font-size: 2vw;
+  
+    > h2 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      letter-spacing: 2px;
+      font-family: 'Oxygen';
+      font-size: 5vw;
+    }
+  }
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes slide-transition-back {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translate(500px);
+    }
+  }
+  
+  .image {
+    width: 75%;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  .left-arrow, .right-arrow {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 50%;
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    left: 16px;
+  }
+  
+  .right-arrow {
+    right: 16px;
+  }
+  
+  .links {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1rem;
+    cursor: pointer;
+  }
+  
+  /* ******************** Media Queries **************** */
+  
+  /* Laptops */
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .header {
+      margin: 2vw 0;
+    }
+  
+    .carousel {
+      padding: 5vw;
+    }
+  }
+  
+  /* Tablets & Ipads */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+      margin: 5vw 0;
+    }
+  
+    .carousel {
+      padding: 5vw;
+    }
+  }
+  
+  /* Phone Landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .header {
+      padding: 0 14vw;
+      margin: 2vw 0;
+    }
+  
+    .left-arrow, .right-arrow {
+      font-size: 2rem;
+    }
+  
+    .left-arrow {
+      left: 0;
+    }
+  
+    .right-arrow {
+      right: 0;
+    }
+  
+    .links {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Smartphones */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .header {
+      padding: 2vw;
+      margin: 2vw 0;
+    }
+  
+    .carousel {
+      height: 60%;
+    }
+  
+    .left-arrow, .right-arrow {
+      font-size: 2rem;
+    }
+  
+    .left-arrow {
+      left: 0;
+    }
+  
+    .right-arrow {
+      right: 0;
+    }
+  
+    .links {
+      font-size: 3rem;
+    }
+  }
